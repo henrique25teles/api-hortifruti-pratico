@@ -35,5 +35,5 @@ Route.get('/auth', async ({auth, response}: HttpContextContract) => {
   } else {
     return response.unauthorized("Usuário não autentitcado");
   }
-});
+}).middleware("auth");
 
