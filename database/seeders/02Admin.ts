@@ -7,11 +7,11 @@ export default class AdminSeeder extends BaseSeeder {
     const user = await User.create({
       email: 'admin@email.com',
       password: '123456',
-      tipo: 'estabelecimentos',
+      tipo: 'admins',
     });
 
     await Admin.create({
-      nome: 'Cliente',
+      nome: 'Admin',
       userId: user.id
     });
   }

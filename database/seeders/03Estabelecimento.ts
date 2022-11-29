@@ -11,7 +11,7 @@ export default class EstabelecimentoSeeder extends BaseSeeder {
     });
 
     await Estabelecimento.create({
-      nome: 'Cliente', 
+      nome: 'Estabelecimento', 
       logo: 'https://webevolui.com.br/principal/images/web-evolui-logo.png',
       online: true,
       bloqueado: false,
