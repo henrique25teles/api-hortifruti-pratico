@@ -7,6 +7,8 @@ Route.post("/cliente/cadastro", "ClientesController.store");
 
 Route.group(() => {
   Route.get("/me", "AuthController.me");
+
+  Route.put("/cliente", "ClientesController.update");
 }).middleware("auth");
 
 Route.get('/', async () => {

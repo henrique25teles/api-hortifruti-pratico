@@ -27,4 +27,8 @@ export default class ClientesController {
         });
     }
 
+    public async update ({ request, response, auth} : HttpContextContract) {
+        
+    }
+
 }
